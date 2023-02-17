@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+    <link rel = "icon" type = "image/png" href = "logo.png"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Restaurant International</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- css file -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<!--Header-->
+<main-header></main-header>
+
+<body>
+
+    <div class="dashboard">
+        <div class="dashboard-banner">
+            <h1 class="heading">Brazilian Menu</h1>
+        </div>
+    </div>
+
+
+
+    <!--JavaScript generates product cards-->
+    <div class="shop shopBR" id="shop"></div>
+    <!--TEST-->
+
+
+
+
+
+
+    <!-- Footer -->
+    <main-footer></main-footer>
+
+</body>
+
+<script src="src/headerAndFooter.js"></script>
+<script src="src/Data.js"></script>
+<script src="src/main.js"></script>
+
+<script>
+
+     var elems = document.querySelectorAll("[id^='product-id-br']")
+
+      for(var i=0; i<elems.length; i++) {
+        elems[i].style.display = "grid";
+      }
+</script>
+
+<script type="text/javascript">
+        let menu = document.querySelector("#menue");
+        let navbar = document.querySelector(".navbar");
+
+        menu.onclick = () =>{
+            menu.classList.toggle("fa-times");
+            navbar.classList.toggle("active");
+
+        }
+
+</script>
+
+
+</html>
